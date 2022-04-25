@@ -4,7 +4,7 @@ Feel free to use it for your own or as a reference!
 I'll update these as the time goes on
 
 # Available dotfiles
-[Neovim](https://github.com/LanCreates/dotfiles/README.md#Neovim)
+[Neovim](https://github.com/LanCreates/dotfiles/blob/main/README.md#neovim)
 
 # Neovim
 1. Install latest version of Neovim
