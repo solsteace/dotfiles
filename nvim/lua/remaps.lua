@@ -54,7 +54,7 @@
 		lua = [[--]],
 	}
 
-	map('v', '<leader>cc',
+	map({'n', 'v'}, '<leader>cc',
 		function()
 			local ftype = vim.bo.filetype
 			local first = vim.fn.line("v")
@@ -75,7 +75,7 @@
 		end,
 	sinore)
 
-	map('v', '<leader>cx',
+	map({'n', 'v'}, '<leader>cx',
 		function()
 			local ftype = vim.bo.filetype
 			local first = vim.fn.line("v")
