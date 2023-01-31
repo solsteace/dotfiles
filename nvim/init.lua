@@ -24,7 +24,7 @@
              settings be loaded
 ]]--
 
-for _, module in ipairs({'basic', 'remaps', 'paq'}) do
+for _, module in ipairs({'basic', 'remaps', 'plugins'}) do
 	local _, is_okay = pcall(require, module)
 	if is_okay then
 		require(module)
@@ -34,4 +34,5 @@ end
 --[[ Jump here ===================
 	 lua/basic
 	 lua/remaps
+	 lua/plugins
 ]]--

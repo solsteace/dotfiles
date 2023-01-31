@@ -32,10 +32,10 @@
 		map('n', '<up>', ':res +2<CR>', sinore)
 		map('n', '<down>', ':res -2<CR>', sinore)
 	-- Navigate splits
-		map('n', '<C-h>', '<C-w>h', nore)
-		map('n', '<C-j>', '<C-w>j', nore)
-		map('n', '<C-k>', '<C-w>k', nore)
-		map('n', '<C-l>', '<C-w>l', nore)
+		map('n', '<M-h>', '<C-w>h', nore)
+		map('n', '<M-j>', '<C-w>j', nore)
+		map('n', '<M-k>', '<C-w>k', nore)
+		map('n', '<M-l>', '<C-w>l', nore)
 	-- Disabled keys
 		map('n', '<BS>', '<Nop>', nore)
 -- Terminal -----------------------------

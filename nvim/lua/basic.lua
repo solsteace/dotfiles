@@ -1,6 +1,6 @@
 --[[ Notes
-	1. Remember to install your desired font first!
-	https://www.nerdfonts.com/font-downloads
+	[O] Remember to install your desired font first!
+		https://www.nerdfonts.com/font-downloads
 ]]--
 
 -- Aliases =====================================================
@@ -22,12 +22,7 @@
 	set.history = 500
 	set.shiftwidth = 4
 	set.tabstop = 4
-	
-	-- NVIM 7.0 exclusive
-	if vim.version()['major'] >= 7 then
-		set.laststatus = 3
-	end
-
+	set.laststatus = 3
 
 	set.background = 'dark'
 	set.clipboard = "unnamedplus"

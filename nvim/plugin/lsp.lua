@@ -3,7 +3,7 @@ local snore = {silent = true, noremap = true}
 local map = vim.api.nvim_buf_set_keymap
 
 -- Nvim LSP installer thing
-require("nvim-lsp-installer").setup{}
+require("mason").setup{}
 
 --[[ REMAPS ====================================
   Note : For leader key, check 'basic' file ]]--
@@ -45,7 +45,7 @@ vim.diagnostic.config({
 
 --[[ START =========================================
    Add more in 'servers' table based on what language you usually work with]]--
-local servers = {"gopls", "sumneko_lua", "pyright"}
+local servers = {"gopls", "sumneko_lua", "pyright", "clangd"}
 for _, server in ipairs(servers) do
 	lsp_config[server].setup{
 		on_attach = on_attach,
