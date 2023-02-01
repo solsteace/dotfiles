@@ -18,8 +18,8 @@ return require("packer").startup(
 		use {"goolord/alpha-nvim"}
 		use {"nvim-lualine/lualine.nvim"}
 		use {"nvim-tree/nvim-web-devicons"}
-		
-		-- Syntatic Sugar
+
+		use {"folke/tokyonight.nvim"}
 		use {"catppuccin/nvim", as = "catppuccin"}
 
 	end

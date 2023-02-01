@@ -3,12 +3,12 @@
 		https://www.nerdfonts.com/font-downloads
 ]]--
 
--- Aliases =====================================================
-	local set = vim.opt
-	local seto = vim.o  -- Global
-	local setw = vim.wo -- Local to window
-	local setb = vim.bo -- Local to buffer
-	local cmd = vim.cmd -- Use to call vim commands
+local set = vim.opt
+local seto = vim.o  -- Global
+local setw = vim.wo -- Local to window
+local setb = vim.bo -- Local to buffer
+local cmd = vim.cmd -- Use to call vim commands
+
 -- Settings ====================================================
 	set.cursorline = true
 	set.incsearch = true

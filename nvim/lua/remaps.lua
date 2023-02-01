@@ -3,21 +3,21 @@
      Current compatibility: Neovim Version >= 7.0
 ]]--
 
--- Variables ================================================
+---- Variables ================================================
 	local map = vim.keymap.set
 	local nore = {noremap = true}
 	local sinore = {noremap = true, silent = true }
 	vim.g.mapleader = " "
 -- Remaps ===================================================
--- Buffers ------------------------------
+-- Buffer Commands ----------------------
 	map('n', '<leader>bl', ':ls<CR>', nore)		  -- Peek opened buffer
 	map('n', '<leader>bn', ':bnext<CR>', sinore)	  -- Go to next
 	map('n', '<leader>bv', ':bprev<CR>', sinore)	  -- Go to previous
 	map('n', '<leader>bb', ':b#<CR>', sinore) 	  -- Go to last opened
--- General ------------------------------
+-- General Commands ---------------------
 	-- Change current working directory to current file in buffer
-		map('n', '<leader>cd', ':cd %:p:h<CR>', nore)
-	-- Remove highlight done by search
+		map('n', '<leader>cd', ':cd %:p:h<CR>:echo "Changed CWD to current file path"<CR>', nore)
+	-- Remove highlight
 		map('n', 'S', ':noh<CR>', nore)
 	-- tab config
 		map('n', '<leader>tn', ':tabnew<CR>', nore)
@@ -27,22 +27,28 @@
 		map('n', '<leader>sx', '<C-w>s', sinore)		  -- Vertical
 		map('n', '<leader>sy', '<C-w>v', sinore)		  -- Horizontal
 	-- Resize splits [Warning: Might work weirdly, so press however suits you]
-		map('n', '<right>', ':vert res +2<CR>', sinore)
-		map('n', '<left>', ':vert res -2<CR>', sinore)
-		map('n', '<up>', ':res +2<CR>', sinore)
-		map('n', '<down>', ':res -2<CR>', sinore)
+		map('n', '<C-right>', ':vert res +2<CR>', sinore)
+		map('n', '<C-left>', ':vert res -2<CR>', sinore)
+		map('n', '<C-up>', ':res +2<CR>', sinore)
+		map('n', '<C-down>', ':res -2<CR>', sinore)
 	-- Navigate splits
 		map('n', '<M-h>', '<C-w>h', nore)
 		map('n', '<M-j>', '<C-w>j', nore)
 		map('n', '<M-k>', '<C-w>k', nore)
 		map('n', '<M-l>', '<C-w>l', nore)
-	-- Get recent vim commands
+	-- Scroll through vim command history
+		map({'n', 'v'}, '<up>', ':<up>', nore)
+		map({'n', 'v'}, '<down>', ':<down>', nore)
 	-- Disabled keys
 		map('n', '<BS>', '<Nop>', nore)
--- Terminal -----------------------------
+	-- Copy directory path of file
+		map('n', '<leader>pt', ':let @+=expand("%:p:h")<CR>:echo "copied file directory"<CR>', nore)
+-- Terminal Commands --------------------
 	map('n', '<leader>tr', ':term<CR>', sinore) -- Open terminal (The one set at [:set shell?])
 	map('t', '<esc>', '<C-\\><C-n>', nore) 		-- Exit terminal mode with esc
--- Function Related ---------------------
+-- Command Aliases ----------------------
+	vim.cmd [[:command W :w]]
+-- Command Using Functions --------------
 	-- Comment and uncomment out blocked line
 	-- )> Not a multiline comment
 	-- )> Available at visual mode)
