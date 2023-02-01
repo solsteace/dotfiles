@@ -21,8 +21,8 @@
 		map('n', 'S', ':noh<CR>', nore)
 	-- tab config
 		map('n', '<leader>tn', ':tabnew<CR>', nore)
-		map('n', '<leader><C-l>', ':tabn<CR>', nore)
-		map('n', '<leader><C-h>', ':tabp<CR>', nore)
+		map('n', '<C-l>', ':tabn<CR>', nore)
+		map('n', '<C-h>', ':tabp<CR>', nore)
 	-- Create [s]plit
 		map('n', '<leader>sx', '<C-w>s', sinore)		  -- Vertical
 		map('n', '<leader>sy', '<C-w>v', sinore)		  -- Horizontal
@@ -36,6 +36,7 @@
 		map('n', '<M-j>', '<C-w>j', nore)
 		map('n', '<M-k>', '<C-w>k', nore)
 		map('n', '<M-l>', '<C-w>l', nore)
+	-- Get recent vim commands
 	-- Disabled keys
 		map('n', '<BS>', '<Nop>', nore)
 -- Terminal -----------------------------
@@ -47,11 +48,11 @@
 	-- )> Available at visual mode)
 	
 	local comment_character = { -- To add your own, use square bracket for literal string!
-		cpp = [[\/\/]], 
-		go = [[\/\/]],
-		glsl = [[\/\/]],
-		python = [[#]],
-		lua = [[--]],
+		cpp = '//', 
+		go = '//',
+		glsl = '//',
+		python = '#',
+		lua = '--',
 	}
 
 	map({'n', 'v'}, '<leader>cc',
