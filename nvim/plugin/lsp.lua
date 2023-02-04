@@ -1,22 +1,34 @@
-local lsp_config = require('lspconfig')
-local snore = {silent = true, noremap = true}
-local map = vim.api.nvim_buf_set_keymap
+local bufopts = {silent = true, noremap = true, buffer = bufnr }
+local opts = {silent = true, noremap = true}
+vim.lsp.set_log_level("debug")
 
 -- Nvim LSP installer thing
 require("mason").setup{}
 
 --[[ REMAPS ====================================
   Note : For leader key, check 'basic' file ]]--
-local function on_attach(client, bufnr)
-	map(bufnr, 'n', '<leader>dc', '<cmd>lua vim.lsp.buf.declaration()<CR>', snore)    -- Instantly go to declaration of something under cursor
-	map(bufnr, 'n', '<leader>df', '<cmd>lua vim.lsp.buf.definition()<CR>', snore)     -- Instantly go to definition of something under cursor
-	map(bufnr, 'n', '<leader>cs', '<cmd>lua vim.lsp.buf.server_ready()<CR>', snore)   -- Checks whether the server in current buffer is ready
-	map(bufnr, 'n', '<leader>k', '<cmd>lua vim.lsp.buf.type_definition()<CR>', snore) -- Describe type of something under cursor [Do twice to go to floating window]
-	map(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', snore)                   -- Describes something under cursor
-	map(bufnr, 'n', '<F1>', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', snore)           -- Check diagnostic detail
+-- View diagnostic details
+	vim.keymap.set('n', ',,', vim.diagnostic.open_float, opts)
+-- Jump to next and previous diagnostic
+	vim.keymap.set('n', ',.', vim.diagnostic.goto_next, opts)
+	vim.keymap.set('n', ',m', vim.diagnostic.goto_prev, opts)
+
+local on_attach = function(client, bufnr)
+	vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+	-- Jump to where something is declared
+		vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts) 
+	-- Jump to where something is defined
+		vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+	-- Describe something under cursor [Do twice to go to floating window]
+		vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+	-- Rename all occurence of something under cursor
+		vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
+	-- Code action (brief details soon)
+		vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
 end
 
--- UI ============================================
+-- styles ============================================
 local signs = {Error = "X ", Warn = "! ", Hint = "? ", Info = "i "}
 for type, icon in pairs(signs) do
 	local hl = "DiagnosticSign" .. type
@@ -46,14 +58,21 @@ vim.diagnostic.config({
 --[[ START =========================================
    Add more in 'servers' table based on what language you usually work with]]--
 local servers = {"gopls", "sumneko_lua", "pyright", "clangd"}
+local settings = {
+	["gopls"] = {},
+	["sumneko_lua"] = {},
+	["pyright"] = {},
+	["clangd"] = {},
+}
+
 for _, server in ipairs(servers) do
-	lsp_config[server].setup{
+	require('lspconfig')[server].setup{
 		on_attach = on_attach,
 		handlers = handlers,
+		-- settings = settings[server],
 	}
 end
 
-print("LSP started!")
 --[[ Self note ====================================
 =] Lua - sumneko_lua [Install via lsp_installer].
 	Add lua_language_server bin folder to PATH (Windows)

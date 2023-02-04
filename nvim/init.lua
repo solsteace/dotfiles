@@ -31,6 +31,7 @@ for _, module in ipairs({'basic', 'remaps', 'plugins'}) do
 	end
 end
 
+-- TODO: fix LSP and Treesitter
 --[[ Jump here ===================
 	 lua/basic
 	 lua/remaps
