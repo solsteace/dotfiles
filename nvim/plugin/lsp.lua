@@ -1,6 +1,5 @@
 local bufopts = {silent = true, noremap = true, buffer = bufnr }
 local opts = {silent = true, noremap = true}
-vim.lsp.set_log_level("debug")
 
 -- Nvim LSP installer thing
 require("mason").setup{}

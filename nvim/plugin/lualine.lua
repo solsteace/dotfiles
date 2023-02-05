@@ -2,8 +2,8 @@
 -- Repo : https://github.com/nvim-lualine/lualine.nvim
 
 require("lualine").setup {
-	theme = 'nightfly',
 	options = {
+		theme = 'tokyonight',
 		icons_enabled = true,
 		component_separators = { left = '|', right = '|'},
 		section_separators = { left = '⡪⠪', right = '⠕⢕'},
@@ -42,5 +42,3 @@ require("lualine").setup {
 	tabline = {},
 	extensions = {}
 }
-
-local alpha = require('alpha')
