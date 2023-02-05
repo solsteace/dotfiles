@@ -80,7 +80,9 @@ end
 
 =] Python - pyright [Install via pip: pip install pyright]
 
-=] C++ - clangd [Install via lsp_installer]
-	Add clangd bin folder to PATH (windows)
+=] C++ - clangd
+	if using mingw-w64 toolchain installed via MSYS2, install
+		mingw-w64-x86_64-clang-extra tools then add mingw-w64
+		bin directory to PATH (windows)
 ]]--
 
