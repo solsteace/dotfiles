@@ -13,6 +13,15 @@ return require("packer").startup(
 		use {"neovim/nvim-lspconfig"}
 		use {"RishabhRD/nvim-lsputils"}
 		use {"williamboman/mason.nvim"} -- Install some LSP easier
+		
+		-- Telescope
+		use {"nvim-lua/plenary.nvim"}
+		use {"nvim-telescope/telescope.nvim",
+			tag = "0.1.1",
+			requires = {
+				{"nvim-lua/plenary.nvim"}
+			}
+		}
 
 		-- Interface sugar
 		use {"goolord/alpha-nvim"}
@@ -21,6 +30,5 @@ return require("packer").startup(
 
 		use {"folke/tokyonight.nvim"}
 		use {"catppuccin/nvim", as = "catppuccin"}
-
 	end
 )
