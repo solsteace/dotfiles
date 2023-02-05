@@ -29,6 +29,9 @@ local cmd = vim.cmd -- Use to call vim commands
 	set.fileencoding = "utf-8"
 	set.guifont = "Hack Nerd Font Mono:h10"
 	set.shell = "powershell"
+	set.shellcmdflag = "-c"
+	set.shellxquote = "" -- for run powershell command through nvim command
+
 	set.listchars = {tab = '┊ ' }
 	set.wildmode = {'full'}
 	set.fillchars = {vert='║', foldclose = '⠗', foldopen = '⠴'}
