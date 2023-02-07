@@ -28,9 +28,15 @@ local cmd = vim.cmd -- Use to call vim commands
 	set.clipboard = "unnamedplus"
 	set.fileencoding = "utf-8"
 	set.guifont = "Hack Nerd Font Mono:h10"
-	set.shell = "powershell"
-	set.shellcmdflag = "-c"
-	set.shellxquote = "" -- for run powershell command through nvim command
+	
+	local env = package.config:sub(1, 1)
+	if env == '\\' then -- Windows
+		set.shell = "powershell"
+		set.shellcmdflag = "-c"
+		set.shellxquote = "" -- for run powershell command through nvim command
+	elseif env == '/' then -- UNIX
+		-- Config here...
+	end 
 
 	set.listchars = {tab = '┊ ' }
 	set.wildmode = {'full'}
