@@ -35,14 +35,14 @@ for type, icon in pairs(signs) do
 end
 
 local border = {
-      {"┌", "FloatBorder"}, -- Top Left
-      {"┄", "FloatBorder"}, -- Top
-      {"┐", "FloatBorder"}, -- Top Right
-      {"┊", "FloatBorder"}, -- Right
-      {"┘", "FloatBorder"}, -- Bottom Right
-      {"┄", "FloatBorder"}, -- Bottom
-      {"└", "FloatBorder"}, -- Bottom Left
-      {"┊", "FloatBorder"}, -- Left
+      {"╭", "FloatBorder"}, -- Top Left
+      {"─", "FloatBorder"}, -- Top
+      {"╮", "FloatBorder"}, -- Top Right
+      {"│", "FloatBorder"}, -- Right
+      {"╯", "FloatBorder"}, -- Bottom Right
+      {"─", "FloatBorder"}, -- Bottom
+      {"╰", "FloatBorder"}, -- Bottom Left
+      {"│", "FloatBorder"}, -- Left
 }
 
 local handlers = {

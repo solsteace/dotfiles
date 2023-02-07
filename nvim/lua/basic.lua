@@ -36,6 +36,4 @@ local cmd = vim.cmd -- Use to call vim commands
 	set.wildmode = {'full'}
 	set.fillchars = {vert='║', foldclose = '⠗', foldopen = '⠴'}
 
-	cmd [[
-		syntax on
-	]]
+	cmd [[syntax on]]
