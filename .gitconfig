@@ -1,5 +1,2 @@
-[user]
-	name = Allen
-	email = valternatean13@gmail.com
 [core]
 	editor = nvim-qt # Requires nvim-qt
