@@ -2,7 +2,7 @@
 
 !nvim
 !nvim/*
-!.gitignore
+!.git*
 !README.md
 
 
