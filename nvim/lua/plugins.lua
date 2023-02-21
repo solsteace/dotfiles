@@ -1,3 +1,12 @@
+-- Snippet picked from nvim-lua/kickstart.nvim
+local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
+local is_bootstrap = false
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+  is_bootstrap = true
+  vim.fn.system { 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path }
+  vim.cmd [[packadd packer.nvim]]
+end
+
 return require("packer").startup(
 	function(use)
 		-- Essential
@@ -21,6 +30,19 @@ return require("packer").startup(
 			requires = {
 				{"nvim-lua/plenary.nvim"}
 			}
+		}
+		
+		-- Discord rich presence
+		use {"andweeb/presence.nvim"}
+		
+		-- utils
+		use {"kylechui/nvim-surround",
+			tag = "*",
+			config = function()
+				require("nvim-surround").setup({
+					-- Extra config goes here
+				})
+			end
 		}
 
 		-- Interface sugar

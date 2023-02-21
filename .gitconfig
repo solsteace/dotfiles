@@ -1,2 +1,2 @@
 [core]
-	editor = nvim-qt # Requires nvim-qt
+	editor = nvim
