@@ -1,8 +1,7 @@
-# Hellooo!
-<h2 align="center">
-<a href="https://github.com/LanCreates/dotfiles/blob/main/README.md#neovim">Neovim</a> | 
-<a href="https://github.com/LanCreates/dotfiles/blob/main/README.md#windows-terminal">Windows Terminal</a>
-</h2>
+<h1 align="center">
+<a href="https://github.com/LanCreates/dotfiles#neovim">Neovim</a> | 
+<a href="https://github.com/LanCreates/dotfiles#windows-terminal">Windows Terminal</a>
+</h1>
 
 <p>
 This is where I keep my settings I use<br>
