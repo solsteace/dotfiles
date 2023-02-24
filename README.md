@@ -14,10 +14,7 @@ I'll update these as the time goes on
 ```
 git clone https://github.com/lancreate5/dotfiles.git
 ```
-
 ## Neovim
-
 ## Windows Terminal
-1. Copy `terminalPrev/settings.json` to 
-`<HOME>\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState`
-1. If there's already one there, overwrite it
+1. Install Windows Terminal Preview
+1. Replace the file or the content of the default `settings.json` with `terminalPrev/settings.json`
