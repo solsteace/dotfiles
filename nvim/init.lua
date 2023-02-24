@@ -21,8 +21,7 @@
      /--------------------------------------------------------------------------------\
       NOTE : Please do read some comment on what should be done/installed
              before using this dotfile. Any error occured won't make the
-             settings be loaded
-]]--
+             settings be loaded ]]--
 
 for _, module in ipairs({'basic', 'remaps', 'plugins', 'au'}) do
 	local _, is_okay = pcall(require, module)
