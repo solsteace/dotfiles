@@ -17,4 +17,4 @@ git clone https://github.com/lancreate5/dotfiles.git
 ## Neovim
 ## Windows Terminal
 1. Install Windows Terminal Preview
-1. Replace the file or the content of the default `settings.json` with `terminalPrev/settings.json`
+1. Replace the file or the content of the default `settings.json` with `terminalPrev/settings.json` (Can be found via the terminal's settings)
