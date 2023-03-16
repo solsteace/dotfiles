@@ -1,6 +1,7 @@
 <h1 align="center">
 <a href="https://github.com/lancreate5/dotfiles#neovim">Neovim</a> | 
 <a href="https://github.com/lancreate5/dotfiles#windows-terminal">Windows Terminal</a>
+
 </h1>
 
 <p>

@@ -2,6 +2,7 @@
 
 !/nvim
 !/terminalPrev
+!/imgs
 !.git*
 !README.md
-
+!/kitty
