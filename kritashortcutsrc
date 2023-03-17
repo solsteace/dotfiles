@@ -1,0 +1,17 @@
+[Shortcuts]
+KisToolSelectOutline=Q
+KisToolTransform=W
+KritaFill/KisToolFill=E
+KritaShape/KisToolBrush=S
+KritaShape/KisToolEllipse=Shift+E
+KritaShape/KisToolLine=Shift+T
+KritaShape/KisToolMultiBrush=none
+KritaTransform/KisToolMove=none
+ToolReferenceImages=R
+deselect=Ctrl+Shift+D
+erase_action=none
+file_quit=none
+mirror_canvas=Ctrl+Q
+previous_preset=A
+reselect=none
+show_color_selector=Z
