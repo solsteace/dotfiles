@@ -35,6 +35,7 @@ local cmd = vim.cmd -- Use to call vim commands
 		set.shellcmdflag = "-c"
 		set.shellxquote = "" -- for run powershell command through nvim command
 	elseif env == '/' then -- UNIX
+		-- For clipboard, fedore requires wl-clipboard
 		-- Config here...
 	end 
 
