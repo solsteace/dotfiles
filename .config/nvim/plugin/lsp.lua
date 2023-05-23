@@ -56,7 +56,14 @@ vim.diagnostic.config({
 
 --[[ START =========================================
    Add more in 'servers' table based on what language you usually work with]]--
-local servers = {"gopls", "lua_ls", "pyright", "clangd"}
+local servers = {
+	"gopls", -- Go
+	"pyright", -- Python
+	"clangd", -- CPP
+	"eslint-lsp", -- JavaScript
+	"emmet-ls" 
+}
+
 local settings = {
 	["gopls"] = {},
 	["lua_ls"] = {},
