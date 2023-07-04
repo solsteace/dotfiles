@@ -60,8 +60,6 @@ local servers = {
 	"gopls", -- Go
 	"pyright", -- Python
 	"clangd", -- CPP
-	"eslint-lsp", -- JavaScript
-	"emmet-ls" 
 }
 
 local settings = {

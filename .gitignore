@@ -1,8 +1,9 @@
 /*
+!.bashrc
 !.git
 !.gitignore
-!.bashrc
 !README.md
+!tmux.conf
 !/.config
 
 /.config/*

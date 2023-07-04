@@ -27,9 +27,10 @@ fi
 
 unset rc
 
+
 # Generate color
 # Ref: https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
-gen_color() {
+color() {
 	res="\e["
 	if [ $# -eq 2 ] # text only
 	then
@@ -47,26 +48,46 @@ gen_color() {
 # Display icon based on time
 time_icon() {
 	res=""
-	if [ $(date +'%H') -gt 3 ] && [ $(date +'%H') -lt 16 ]
+	if [ $(date +'%H') -gt 12 ] && [ $(date +'%H') -lt 24 ]
 	then
-		res+="$(gen_color ⡱⢎ 214)"
+		res="PM"
 	else
-		res+="$(gen_color ⢬⡷ 214)"
+		res="AM"
 	fi
 	echo -e $res
 }
 
 gen_user() {
-	res="$(gen_color ▒▓ $2)"
-	res+="$(gen_color " ▝▗▂▖▘ $USER " $1 $2)"
-	res+="$(gen_color ▓▒ $2)"
+	res="$(color "$USER "  $1 $2)"
 	echo -e $res
 }
- 
+
+gen_PS1() {
+	# ║ ⢌⠔⡶⣌⠀⠀⣡⢶⠢⡡ ║
+	# ║⠀⠀⠀⠑⠁⢄⡠⠈⠊⠀⠀⠀║
+	# Refer: https://www.gnu.org/software/bash/manual/bash.html#Controlling-the-Prompt
+	# For constant update, notice the '\' in $() syntax
+	
+	C0=123
+	C1=75
+	C2=238
+	C3=236
+
+	prompt="$(color "▓▒" $C0 $C0)"
+	prompt+="$(gen_user $C3 $C0)"
+	prompt+="$(color "▓" $C0 $C2)"
+	prompt+="$(color "▓▒" $C1 $C2)"
+	prompt+="$(color "▓▒" $C2 $C3)"
+	prompt+="$(color " \@\$(time_icon) | \W " $C1 $C3)"
+	prompt+="$(color " \$" $C1)"
+	prompt+="⠀"
+	echo -e $prompt
+}
+
 # Execute this before every next prompt
-# PROMPT_COMMAND="mytime=$(time_icon) && echo time is $mytime"
+# PROMPT_COMMAND="echo \n"
+PS1="$(gen_PS1)"
 
-# Refer: https://www.gnu.org/software/bash/manual/bash.html#Controlling-the-Prompt
-# For constant update, notice the '\' in $() syntax
-PS1="$(gen_user 208 253)⡿⢯ \$(time_icon) \@⡽ \$ "
-
+# Aliases
+alias ZZ=exit
+alias TX="tmux -f ~/tmux.conf"

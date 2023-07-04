@@ -22,7 +22,9 @@ return require("packer").startup(
 		use {"neovim/nvim-lspconfig"}
 		use {"RishabhRD/nvim-lsputils"}
 		use {"williamboman/mason.nvim"} -- Install some LSP easier
-		
+	
+		use {"mattn/emmet-vim"}
+
 		-- Telescope
 		use {"nvim-lua/plenary.nvim"}
 		use {"nvim-telescope/telescope.nvim",

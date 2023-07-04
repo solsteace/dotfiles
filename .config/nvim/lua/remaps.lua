@@ -16,6 +16,8 @@
 	map('n', '<leader>bb', ':b#<CR>', sinore) 	  -- Go to last opened
 -- General Commands ---------------------
 	-- Change current working directory to current file in buffer
+		map({"n", "v", "i"}, '<M-k>', '<ESC>', nore)
+	-- Change current working directory to current file in buffer
 		map('n', '<leader>cd', ':cd %:p:h<CR>:echo "Changed CWD to current file path"<CR>', nore)
 	-- Remove highlight
 		map('n', 'S', ':noh<CR>', nore)
