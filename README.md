@@ -3,7 +3,7 @@
     <a href="https://github.com/solsteace/dotfiles#windows-terminal-preview">Windows Terminal</a>| 
     <a href="https://github.com/solsteace/dotfiles#tmux">Tmux</a> |
     <a href="https://github.com/solsteace/dotfiles#konsole">Konsole</a> |
-    <a href="https://github.com/solsteace/dotfiles#kitty">Kitty</a> |
+    <a href="https://github.com/solsteace/dotfiles#kitty">Kitty</a>
 </h1>
 
 <p>
@@ -14,15 +14,18 @@
 
 
 # 🛠Installation
-` git clone https://github.com/lancreate5/dotfiles.git `
+On your home directory, enter `git clone https://github.com/lancreate5/dotfiles.git`
 
+> Most of the stuff should work without any extra work, except for the following
 ## Neovim
 1. Install the following dependencies (More to come if saw any)
-  1. npm
-  1. GCC
+    - npm
+    - GCC
 1. Install Packer as plugin manager
-    - Windows: `git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
-    - UNIX: `git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"`
+    - Windows
+        ```git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim```
+    - UNIX
+        ```git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"```
 1. Run Neovim. If Packer not automatically installs the plugins, enter `:PackerSync`
 1. ...
 
