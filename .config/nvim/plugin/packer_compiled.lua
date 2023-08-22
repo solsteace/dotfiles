@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/lan/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/lan/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/nvimdev/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/lan/.local/share/nvim/site/pack/packer/start/lualine.nvim",

@@ -14,17 +14,17 @@ require("mason").setup{}
 
 local on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-
-	-- Jump to where something is declared
-		vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts) 
-	-- Jump to where something is defined
-		vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-	-- Describe something under cursor [Do twice to go to floating window]
-		vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-	-- Rename all occurence of something under cursor
-		vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
-	-- Code action (brief details soon)
-		vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
+	--
+-- Jump to where something is declared
+	vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts) 
+-- Jump to where something is defined
+	vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+-- Describe something under cursor [Do twice to go to floating window]
+	vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+-- Rename all occurence of something under cursor
+	vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
+-- Code action (brief details soon)
+	vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
 end
 
 -- styles ============================================
@@ -56,38 +56,19 @@ vim.diagnostic.config({
 
 --[[ START =========================================
    Add more in 'servers' table based on what language you usually work with]]--
-local servers = {
+local auto_config_servers = {
 	"gopls", -- Go
 	"pyright", -- Python
 	"clangd", -- CPP
+	"html",
+	"cssls",  -- CSS
+	"tsserver"
 }
 
-local settings = {
-	["gopls"] = {},
-	["lua_ls"] = {},
-	["pyright"] = {},
-	["clangd"] = {},
-}
-
-for _, server in ipairs(servers) do
+for _, server in ipairs(auto_config_servers) do
 	require('lspconfig')[server].setup{
 		on_attach = on_attach,
 		handlers = handlers,
-		-- settings = settings[server],
+		settings = settings,
 	}
 end
-
---[[ Self note ====================================
-=] Lua - sumneko_lua [Install via lsp_installer].
-	Add lua_language_server bin folder to PATH (Windows)
-   
-=] Go - gopls [Install via cmd: ]
-
-=] Python - pyright [Install via pip: pip install pyright]
-
-=] C++ - clangd
-	if using mingw-w64 toolchain installed via MSYS2, install
-		mingw-w64-x86_64-clang-extra tools then add mingw-w64
-		bin directory to PATH (windows)
-]]--
-
