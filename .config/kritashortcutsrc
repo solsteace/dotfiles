@@ -17,4 +17,4 @@ previous_preset=A
 reselect=none
 show_color_selector=Z
 toggle_fg_bg=none
-view_show_guides=G
+view_show_guides=Shift+G

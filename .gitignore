@@ -1,11 +1,14 @@
+# directory/*  will make git ignore only what inside directory
+# directory/ will make git ignore everything including the sirectory
+
 /*
 !.bashrc
 !.git
 !.gitignore
 !README.md
 !tmux.conf
-!/.config
 
+!/.config/
 /.config/*
 !/.config/imgs
 !/.config/kitty
@@ -14,4 +17,8 @@
 !/.config/terminalPrev
 !/.config/.gitconfig
 
-
+!/.local/
+/.local/*
+!/.local/share/
+/.local/share/*
+!/.local/share/konsole
