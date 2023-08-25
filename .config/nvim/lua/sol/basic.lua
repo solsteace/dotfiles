@@ -4,11 +4,6 @@
 ]]--
 
 local set = vim.opt
-local seto = vim.o  -- Global
-local setw = vim.wo -- Local to window
-local setb = vim.bo -- Local to buffer
-local cmd = vim.cmd -- Use to call vim commands
-
 -- Settings ====================================================
 	set.cursorline = true
 	set.incsearch = true
@@ -20,10 +15,12 @@ local cmd = vim.cmd -- Use to call vim commands
 	set.wrap = false
 
 	set.history = 500
+	set.pumblend = 0
 	set.shiftwidth = 4
 	set.tabstop = 4
 	set.laststatus = 3
 
+	set.colorcolumn = "90"
 	set.background = 'dark'
 	set.clipboard = "unnamedplus"
 	set.fileencoding = "utf-8"
@@ -43,4 +40,4 @@ local cmd = vim.cmd -- Use to call vim commands
 	set.wildmode = {'full'}
 	set.fillchars = {vert='║', foldclose = '⠗', foldopen = '⠴'}
 
-	cmd [[syntax on]]
+	vim.cmd [[syntax on]]

@@ -22,9 +22,8 @@ return require("packer").startup(
 		use {"neovim/nvim-lspconfig"}
 		use {"RishabhRD/nvim-lsputils"}
 		use {"williamboman/mason.nvim"} -- Install some LSP easier
-		use {"nvimdev/lspsaga.nvim"} -- Show LSP doodahs prettier
+		-- use {"nvimdev/lspsaga.nvim"} -- Show LSP doodahs prettier
 	
-		use {"mattn/emmet-vim"} -- Make writing HTML and CSS easier
 
 		-- Telescope
 		use {"nvim-lua/plenary.nvim"}
@@ -35,18 +34,29 @@ return require("packer").startup(
 			}
 		}
 		
-		-- Discord rich presence
-		use {"andweeb/presence.nvim"}
-		
+		-- Autocompletion
+		use{'hrsh7th/cmp-nvim-lsp'}
+		use{'hrsh7th/cmp-buffer'}
+		use{'hrsh7th/cmp-path'}
+		use{'hrsh7th/cmp-cmdline'}
+		use{'hrsh7th/nvim-cmp'}
+			-- Supplies cmp
+		use{'L3MON4D3/LuaSnip'}
+		use{'saadparwaiz1/cmp_luasnip'}
+
 		-- utils
-		use {"kylechui/nvim-surround",
-			tag = "*",
-			config = function()
-				require("nvim-surround").setup({
-					-- Extra config goes here
-				})
-			end
-		}
+			use {"kylechui/nvim-surround",
+				tag = "*",
+				config = function()
+					require("nvim-surround").setup({
+						-- Extra config goes here
+					})
+				end
+			}
+			-- Make writing HTML and CSS easier
+				use {"mattn/emmet-vim"} 
+			-- Discord rich presence
+				use {"andweeb/presence.nvim"}
 
 		-- Interface sugar
 		use {"goolord/alpha-nvim"}
@@ -55,5 +65,8 @@ return require("packer").startup(
 
 		use {"folke/tokyonight.nvim"}
 		use {"catppuccin/nvim", as = "catppuccin"}
+
+		-- utils
+		use {"dstein64/vim-startuptime"}
 	end
 )

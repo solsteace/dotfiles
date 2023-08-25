@@ -1,3 +1,1 @@
-local icons = require('nvim-web-devicons')
-
-icons.setup{ }
+require('nvim-web-devicons').setup{ }
