@@ -12,11 +12,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-	"nvim-lualine/lualine.nvim",
+require("lazy").setup("sol.plugins")
+--[[
+{
+	"dstein64/vim-startuptime",
 	"andweeb/presence.nvim",
-	{ "folke/tokyonight.nvim",
-	  lazy = false,
+	{ "nvim-lualine/lualine.nvim",
+		depedencies = { "folke/tokyonight.nvim" }
+	},
+	{"folke/tokyonight.nvim",
+	  lazy = true,
 	  priority = 1000,
 	  opts = {},
 	},
@@ -30,4 +35,4 @@ require("lazy").setup({
 			require'alpha'.setup(require'alpha.themes.startify'.config)
 		end
 	},
-})
+})]]--
