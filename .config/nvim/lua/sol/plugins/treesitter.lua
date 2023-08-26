@@ -1,14 +1,16 @@
 return {"nvim-treesitter/nvim-treesitter",
-	build = function()
-        require("nvim-treesitter.install").update({ with_sync = true })
-	end,
+	event = {"BufReadPost", "BufNewFile"},
+	build = ":TSUpdate",
+	dependencies = { "nvim-treesitter/nvim-treesitter-textobjects"},
+	cmd = {"TSUpdateSync"},
 	config = function()
-		require("nvim-treesitter.configs").setup({
+		require('nvim-treesitter.configs').setup({
 			ensure_installed = {
 				"go", "python", "cpp", "html", "css", 
 				"javascript", "lua", "markdown",
-			}
+			},
+			highlight = { enable = true },
+			indent = { enable = true },
 		})
-		require("nvim-treesitter.install").update({ with_sync = true })
 	end
 }
