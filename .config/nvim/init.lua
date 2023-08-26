@@ -1,7 +1,9 @@
-require("sol")
+require("sol.core")
+require("sol.lazy")
 
 --[[ Jump here ===================
-	 sol/basic
-	 sol/remaps
-	 sol/plugins
+	 lua/sol/core/init
+	 lua/sol/core/basic
+	 lua/sol/core/remaps
+	 lua/sol/lazy
 ]]--

@@ -1,7 +1,3 @@
------------------------- Config file data ------------------------
--- Name : alpha-nvim
-------------------------------------------------------------------
-
 -- Aliases and variables
 local dashboard = require('alpha.themes.dashboard')
 local v = vim.version()
@@ -13,15 +9,15 @@ dashboard.section.header.val = { -- length : 34
 	[[             ▇     ▇              ]],
 	[[               ▜▇▛                ]],
 	[[                                  ]],
-	[[             Hi, Lan!             ]],
-	[[    So, What will it be today?    ]],
+	[[           Eyo, Allen!            ]],
+	[[    What will it be for today?    ]],
 	[[                                  ]],
-	[[  ⠺════════════════════════════⠗  ]],
+	[[  :════════════════════════════:  ]],
 	string.format("  %-9s                %s  ",  -- 2+9+[16]+5+2
 		os.date("%A"), os.date("%H:%M")),
 	string.format("  %02s %s %s             ", -- 2+2+1+9+1+4+[13]+2
 		os.date("%d"), os.date("%B"), os.date("%Y")),
-	[[  ⠺════════════════════════════⠗  ]],
+	[[  '════════════════════════════'  ]],
 }
 
 -- Menus
