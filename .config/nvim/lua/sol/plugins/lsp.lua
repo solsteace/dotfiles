@@ -1,4 +1,5 @@
 return {"neovim/nvim-lspconfig",
+	event = {"BufFilePost", "BufFilePre"},
 	config = function()
 		-- STYLE ============================================
 		local bufopts = {silent = true, noremap = true, buffer = bufnr }
@@ -59,6 +60,7 @@ return {"neovim/nvim-lspconfig",
 			"pyright", -- Python
 			"clangd", -- CPP
 			"html",
+			"emmet_ls", -- Emmet
 			"cssls",  -- CSS
 			"tsserver",
 		}
