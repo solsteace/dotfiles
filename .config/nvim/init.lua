@@ -1,5 +1,8 @@
 require("sol.core")
-require("sol.lazy")
+
+if not vim.g.vscode then
+	require("sol.lazy")
+end
 
 --[[ Jump here ===================
 	 lua/sol/core/init
