@@ -62,15 +62,19 @@ time_icon() {
 gen_PS1() {
 	COL1=120
 	COL2=17
-	prompt=""
 
+	prompt="\001\e["
 	prompt+="$(color "\uE0B6" $COL1)"
 	prompt+="$(color "█" $COL1 $COL2)"
 	prompt+="$(color '\u' $COL2 $COL1)"
 	prompt+="$(color '██\uE0BC' $COL1 $COL2)"
+
 	prompt+="$(color "   \@\$(time_icon)  " $COL1 $COL2)"
 	prompt+="$(color "\uE0B0" $COL2)"
+
 	prompt+="$(color " \W \$ " $COL1)"
+	prompt+="\e[0m\002"
+
 	echo -e $prompt
 }
 
