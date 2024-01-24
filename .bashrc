@@ -58,43 +58,25 @@ time_icon() {
 	echo -e $res
 }
 
-gen_user() {
-	res="$(color "$USER "  $1 $2)"
-	echo -e $res
-}
-
+# Refer: https://www.gnu.org/software/bash/manual/bash.html#Controlling-the-Prompt
 gen_PS1() {
-	# Refer: https://www.gnu.org/software/bash/manual/bash.html#Controlling-the-Prompt
-	C0=123
-	C1=75
-	C2=238
-	C3=236
+	COL1=120
+	COL2=17
+	prompt=""
 
-	prompt="$(color "▓▒" $C0 $C0)"
-	prompt+="$(gen_user $C3 $C0)"
-	prompt+="$(color "▓" $C0 $C2)"
-	prompt+="$(color "▓▒" $C1 $C2)"
-	prompt+="$(color "▓▒" $C2 $C3)"
-	prompt+="$(color " \@\$(time_icon) | \W " $C1 $C3)"
-	prompt+="$(color " \$" $C1)"
-	prompt+="⠀"
+	prompt+="$(color "\uE0B6" $COL1)"
+	prompt+="$(color "█" $COL1 $COL2)"
+	prompt+="$(color '\u' $COL2 $COL1)"
+	prompt+="$(color '██\uE0BC' $COL1 $COL2)"
+	prompt+="$(color "   \@\$(time_icon)  " $COL1 $COL2)"
+	prompt+="$(color "\uE0B0" $COL2)"
+	prompt+="$(color " \W \$ " $COL1)"
 	echo -e $prompt
 }
 
 # Execute this before every next prompt
 # PROMPT_COMMAND="echo \n"
-# PS1="$(gen_PS1)"
-COL1=120
-COL2=17
-
-pro+="$(color "█" $COL1 $COL2)"
-pro+="$(color '\u' $COL2 $COL1)"
-pro+="$(color '██\uE0B0' $COL1 $COL2)"
-pro+="$(color "   \@\$(time_icon)  " $COL1 $COL2)"
-pro+="$(color "\uE0B0" $COL2)"
-pro+="$(color " \W \$" $COL1) "
-
-PS1=$pro
+PS1="$(gen_PS1)"
 
 # Aliases
 alias zz=exit
