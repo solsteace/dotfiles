@@ -1,5 +1,5 @@
 return {"neovim/nvim-lspconfig",
-	event = {"BufFilePost", "BufFilePre"},
+	event = {"BufReadPost"},
 	config = function()
 		-- STYLE ============================================
 		local bufopts = {silent = true, noremap = true, buffer = bufnr }
@@ -60,7 +60,6 @@ return {"neovim/nvim-lspconfig",
 			"pyright", -- Python
 			"clangd", -- CPP
 			"html",
-			"emmet_ls", -- Emmet
 			"cssls",  -- CSS
 			"tsserver",
 		}
@@ -69,19 +68,33 @@ return {"neovim/nvim-lspconfig",
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 		capabilities.textDocument.completion.completionItem.snippetSupport = true
 		for _, server in ipairs(default_config_servers) do
-			lspcon[server].setup {
+			local config_table = {}
+			lspcon[server].setup({
 				handlers = handlers,
 				capabilities = capabilities
-			}
+			})
 		end
 
 		lspcon.eslint.setup({
-		  on_attach = function(client, bufnr)
-			vim.api.nvim_create_autocmd("BufWritePre", { -- Enable fix by esLint
-			  buffer = bufnr,
-			  command = "EslintFixAll",
-			})
-		  end,
+			on_attach = function(client, bufnr)
+				vim.api.nvim_create_autocmd("BufWritePre", { -- Enable fix by esLint
+					buffer = bufnr,
+					command = "EslintFixAll",
+				})
+			end,
+		})
+
+		lspcon.html.setup({
+			opts = {
+				settings = {
+					html = {
+						hover = {
+							documentation = true,
+							references = true,
+						}
+					}
+				}
+			}
 		})
 	end
 }
