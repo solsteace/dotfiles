@@ -30,8 +30,9 @@ unset rc
 
 # Generate color
 # Ref: https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+# Prompt overwriting troubleshoot: https://stackoverflow.com/questions/19092488/custom-bash-prompt-is-overwriting-itself
 color() {
-	res="\e["
+	res="\001\e["
 	if [ $# -eq 2 ] # text only
 	then
 		res+="38;5;$2m"
@@ -41,8 +42,8 @@ color() {
 		res+="48;5;$3m"
 	fi
 	res+="$1"
-	res+="\e[0m"
-	echo $res
+	res+="\e[0m\002"
+	echo -e $res
 }
 
 # Display icon based on time
@@ -63,11 +64,7 @@ gen_user() {
 }
 
 gen_PS1() {
-	# ║ ⢌⠔⡶⣌⠀⠀⣡⢶⠢⡡ ║
-	# ║⠀⠀⠀⠑⠁⢄⡠⠈⠊⠀⠀⠀║
 	# Refer: https://www.gnu.org/software/bash/manual/bash.html#Controlling-the-Prompt
-	# For constant update, notice the '\' in $() syntax
-	
 	C0=123
 	C1=75
 	C2=238
@@ -86,8 +83,22 @@ gen_PS1() {
 
 # Execute this before every next prompt
 # PROMPT_COMMAND="echo \n"
-PS1="$(gen_PS1)"
+# PS1="$(gen_PS1)"
+COL1=120
+COL2=17
+
+pro+="$(color "█" $COL1 $COL2)"
+pro+="$(color '\u' $COL2 $COL1)"
+pro+="$(color '██\uE0B0' $COL1 $COL2)"
+pro+="$(color "   \@\$(time_icon)  " $COL1 $COL2)"
+pro+="$(color "\uE0B0" $COL2)"
+pro+="$(color " \W \$" $COL1) "
+
+PS1=$pro
 
 # Aliases
-alias ZZ=exit
-alias TX="tmux -f ~/tmux.conf"
+alias zz=exit
+alias tx="tmux -f ~/tmux.conf"
+alias vi="nvim --clean"
+alias nv="nvim"
+alias nvx="nvim -u ~/.config/nvim/lua/lazyVim/init.lua"
