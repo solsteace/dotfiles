@@ -1,13 +1,13 @@
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=0.20782813952846704
+ArtColorSel.Light=0.9226250906907415
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
-ArtColorSel.SelColorH=0.6826318666302269
-ArtColorSel.SelColorS=0.32764937080908024
-ArtColorSel.SelColorX=0.20782813952846704
+ArtColorSel.SelColorH=0.10392050165837481
+ArtColorSel.SelColorS=0.4128092393902295
+ArtColorSel.SelColorX=0.9226250906907415
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -29,7 +29,7 @@ ColorManagement/UseSystemMonitorProfile=false
 ConvertToImageColorSpaceOnImport=false
 CreateBackupFile=true
 ExportConfiguration-image/jpeg=<!DOCTYPE params>\n<params>\n <param type="internal" name="baseline">true</param>\n <param type="internal" name="exif">true</param>\n <param type="string" name="filters"><![CDATA[]]></param>\n <param type="internal" name="forceSRGB">false</param>\n <param type="internal" name="iptc">true</param>\n <param type="internal" name="is_sRGB">true</param>\n <param type="internal" name="optimize">true</param>\n <param type="internal" name="progressive">false</param>\n <param type="internal" name="quality">80</param>\n <param type="internal" name="saveProfile">true</param>\n <param type="internal" name="smoothing">0</param>\n <param type="internal" name="storeAuthor">true</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="internal" name="subsampling">0</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-g10.icc"/>\n</color>\n]]></param>\n <param type="internal" name="xmp">true</param>\n</params>\n
-ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">1</param>\n <param type="internal" name="downsample">false</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">true</param>\n <param type="internal" name="storeMetaData">true</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB b="1" space="sRGB-elle-V2-g10.icc" r="1" g="1"/>\n</color>\n]]></param>\n</params>\n
+ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">1</param>\n <param type="internal" name="downsample">false</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">true</param>\n <param type="internal" name="storeMetaData">true</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB r="1" space="sRGB-elle-V2-g10.icc" b="1" g="1"/>\n</color>\n]]></param>\n</params>\n
 FilterSelector/LastUsedFilter=hsvadjustment
 GamutMasks.viewMode=0
 KineticScrollingEnabled=true
@@ -46,8 +46,8 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" r="1" g="1" b="1"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" r="0.196078434586525" g="0.156862750649452" b="0.400000005960464"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc" b="1"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB g="0.921568632125854" r="0.95686274766922" space="sRGB-elle-V2-srgbtrc.icc" b="0.858823537826538"/>\n</LastForeGroundColor>\n
 LastPreset=b) Basic-5 Size
 LastPreset_-1=b) Basic-5 Size
 LineSmoothingDelayDistance=50
@@ -121,7 +121,7 @@ eraserCursorMaincColor=128,255,128
 eraserCursorStyle=9
 eraserOutlineStyle=2
 ffmpegLocation=/usr/bin/ffmpeg
-filterdialog/geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x00\x00\x02\xd1\x00\x00\x02\xbd\x00\x00\x00\x00\x00\x00\x00\xcc\x00\x00\x02\xd1\x00\x00\x02\xbd\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x00\x00\x00\x00\x00\xcc\x00\x00\x02\xd1\x00\x00\x02\xbd
+filterdialog/geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe4\x00\x00\x02\xd1\x00\x00\x02\xf2\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x02\xd1\x00\x00\x02\xf2\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x02\xd1\x00\x00\x02\xf2
 filterdialog/rememberlastpreset=false
 forceAlwaysFullSizedEraserOutline=false
 forceAlwaysFullSizedOutline=false
@@ -152,9 +152,11 @@ hideScrollbarsFullScreen=true
 hideStatusbarFullScreen=true
 hideTitleBarFullscreen=true
 hideToolbarFullscreen=true
-imageHeightDef=3000
+imageHeightDef=4000
 imageResolutionDef=300
-imageWidthDef=4000
+imageWidthDef=3000
+imageoffsetdlg_xoffsetunit=px
+imageoffsetdlg_yoffsetunit=px
 imagesizedlg_imsizeunit=px
 imagesizedlg_printSizeSeparatly=false
 imagesizedlg_ratioLock=true
@@ -165,7 +167,7 @@ logviewer_enabled=false
 maxAllowedSpeedValue=30
 maxSwapSize=4096
 maximumBrushSize=1000
-mdiBackgroundColorXML=<!DOCTYPE color>\n<color channeldepth="U8">\n <RGB g="0.301960796117783" space="sRGB-elle-V2-srgbtrc.icc" b="0.301960796117783" r="0.301960796117783"/>\n</color>\n
+mdiBackgroundColorXML=<!DOCTYPE color>\n<color channeldepth="U8">\n <RGB b="0.301960796117783" r="0.301960796117783" g="0.301960796117783" space="sRGB-elle-V2-srgbtrc.icc"/>\n</color>\n
 mdiBackgroundImage=
 mdi_viewmode=1
 memoryHardLimitPercent=50
@@ -237,7 +239,7 @@ popuppalette/showRotationTrack=true
 popuppalette/size=385
 popuppalette/useDynamicSlotCount=true
 popuppalette/usevisualcolorselector=false
-presethistory=y) Texture Splat,d) Ink-7 Brush Rough,d) Ink-1 Precision,d) Ink-2 Fineliner,f) Bristles-3 Large Smooth,a) Eraser Circle,b) Basic-5 Size,b) Basic-4 Flow Opacity SQR,c) Pencil-1 Hard,b) Basic-6 Details
+presethistory=b) Basic-6 Details,k) Blender Blur,j) Waterpaint Hard Edges,j) Watercolor Fringe,k) Blender Knife Edge,j) Waterpaint Soft Edges,b) Basic-5 Size Opacity,a) Eraser Circle,b) Basic-5 Size,b) Basic-4 Flow Opacity SQR
 recorder/captureinterval=45
 recorder/compression=3
 recorder/format=1
@@ -292,9 +294,9 @@ active-profile=Allenoch4
 
 [File Dialogs]
 DontUseNativeFileDialog=false
-OpenDocument=/home/lan/Personal/wurrkk
-OpenReferenceImage=/home/lan/Personal/Digital-Drawing/2023/main files
-SaveAs=/home/lan/Personal/Digital-Drawing/2023/main files
+OpenDocument=/home/lan/Personal/Digital-Drawing/2023/main files
+OpenReferenceImage=/home/lan/Personal/Digital-Drawing/2024
+SaveAs=/home/lan/Personal/Digital-Drawing/2024/mainFiles
 
 [GradientChooser]
 global/itemSize=medium
@@ -302,8 +304,8 @@ global/itemSizeCustom=32
 global/viewMode=icon
 
 [KFileDialog Settings]
-Recent Files[$e]=Amaryllis~000.kra,file:$HOME/Personal/Digital-Drawing/2023/main files/FernBento.kra,file:$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis8.kra,file:$HOME/Personal/Digital-Drawing/2023/sleepover-init.png,file:$HOME/Personal/Digital-Drawing/2023/j.png,file:$HOME/Personal/Digital-Drawing/2023/main files/theGals.kra,file:$HOME/Personal/Digital-Drawing/2023/main files/practice.kra,file:$HOME/Personal/Digital-Drawing/2023/main files/letstryanother-4.png,file:$HOME/Personal/Digital-Drawing/2023/main files/letstryanother-3.png,file:$HOME/Personal/Digital-Drawing/2023/main files/letstryanother-2.png,file:$HOME/Personal/Digital-Drawing/2023/main files/letstryanother.png,file:$HOME/Personal/Digital-Drawing/2023/Yurika-ssummrr.png,file:$HOME/Personal/Digital-Drawing/2023/Castellirinha.png,file:$HOME/Personal/Digital-Drawing/2023/Amaryllis-ssummrr-dark.png,file:$HOME/Personal/Digital-Drawing/2023/Amaryllis4-21.png,file:$HOME/Personal/Digital-Drawing/2023/main files/letstryanother.kra
-Recent URLs[$e]=file:///,file:$HOME/Personal/Digital-Drawing/,file:$HOME/Documents/,file:$HOME/Personal/Digital-Drawing/2023/main files/,file:$HOME/Personal/Digital-Drawing/2023/,file:$HOME/,file:$HOME/Downloads/,file:$HOME/Personal/,file:$HOME/Personal/Digital-Drawing/2023/timelapse/,file:$HOME/Personal/wurrkk/
+Recent Files[$e]=Amaryllis~000.kra,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/buns.kra,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/buns,file:$HOME/Personal/Digital-Drawing/2024/Yelena.png,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/Yelena.kra,file:$HOME/Personal/Digital-Drawing/2024/Rafaela3.png,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/Rafaela3.kra,file:$HOME/Personal/Digital-Drawing/2024/Castella7E8.png,file:$HOME/Personal/Digital-Drawing/2024/ Amaryllis7E8.png,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/Castella7E8.kra,file:$HOME/Personal/Digital-Drawing/2023/Castella3-E1.png,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/ Amaryllis7E8.kra,file:$HOME/Personal/Digital-Drawing/2023/Amaryllis7E7-2.png,file:$HOME/Personal/Digital-Drawing/2023/Amaryllis7E7-3.png,file:$HOME/Personal/Digital-Drawing/2023/Lavinia.png
+Recent URLs[$e]=file:$HOME/Documents/,file:$HOME/Personal/Digital-Drawing/2023/main files/,file:$HOME/Personal/Digital-Drawing/2023/,file:$HOME/,file:$HOME/Personal/Digital-Drawing/2018 - 2019/,file:$HOME/Personal/Digital-Drawing/2023/SketchnProgress/,file:$HOME/Personal/Digital-Drawing/2022/,file:$HOME/Personal/Digital-Drawing/2024/mainFiles/,file:$HOME/Personal/Digital-Drawing/2024/
 detailViewIconSize=16
 listViewIconSize=64
 
@@ -331,7 +333,7 @@ forceLodMode=true
 useOverlayPreviewStyle=false
 
 [KritaFill/KisToolFill]
-thresholdAmount=3
+thresholdAmount=2
 
 [KritaShape/KisToolEllipse]
 outlineType=1
@@ -356,18 +358,18 @@ amount=0.05
 amountHasPressure=false
 flow=0.2
 reverseDirection=false
-size=266.9996191220286
+size=252.73210016384277
 sizeHasPressure=false
 spacing=0.2
 useWashMode=false
 
 [MainWindow]
 1366x768 screen: Window-Maximized=true
-State=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awBlAHIAAAAAAP////8AAABVAP////sAAAAUAEcAcgBpAGQARABvAGMAawBlAHIAAAAAAP////8AAAErAP////sAAAAeAEgAaQBzAHQAbwBnAHIAYQBtAEQAbwBjAGsAZQByAAAAAAD/////AAAARQD////7AAAAKgBBAG4AaQBtAGEAdABpAG8AbgBDAHUAcgB2AGUAcwBEAG8AYwBrAGUAcgAAAAAA/////wAAAGgA////+wAAADIAUwB2AGcAUwB5AG0AYgBvAGwAQwBvAGwAbABlAGMAdABpAG8AbgBEAG8AYwBrAGUAcgAAAAAA/////wAAAHgA////+wAAABYAVABvAHUAYwBoAEQAbwBjAGsAZQByAAAAAkwAAAExAAAAEQD////7AAAAGgBBAHIAcgBhAG4AZwBlAEQAbwBjAGsAZQByAAAAAAD/////AAAANgD////7AAAAOgBjAG8AbQBpAGMAcwBfAHAAcgBvAGoAZQBjAHQAXwBtAGEAbgBhAGcAZQByAF8AZABvAGMAawBlAHIAAAAAAP////8AAAC3AP////sAAAAqAHEAdQBpAGMAawBfAHMAZQB0AHQAaQBuAGcAcwBfAGQAbwBjAGsAZQByAAAAAAD/////AAAAegD////7AAAAFgBQAGEAZwBlAHIARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAmAGwAYQBzAHQAZABvAGMAdQBtAGUAbgB0AHMAZABvAGMAawBlAHIAAAAAAP////8AAAB4AP////sAAAASAEcAYQBtAHUAdABNAGEAcwBrAAAAAAD/////AAABIwD////7AAAAEABTAG4AYQBwAHMAaABvAHQAAAAC3wAAAKQAAAB2AP////sAAAASAEwAbwBnAEQAbwBjAGsAZQByAAAAAAD/////AAAAeAD////7AAAAIABTAHQAbwByAHkAYgBvAGEAcgBkAEQAbwBjAGsAZQByAAAAAAD/////AAAAmgD///8AAAACAAAKAAAAALz8AQAAAAH7AAAAGgBUAG8AbwBsAEIAYQByAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAAAAAADAAAAAAAAAAD8AQAAAAT7AAAAHABGAGwAaQBwAGIAbwBvAGsARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAeAEEAbgBpAG0AYQB0AGkAbwBuAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAD7AAAAIABPAG4AaQBvAG4AUwBrAGkAbgBzAEQAbwBjAGsAZQByAAAAAAD/////AAABNgD////7AAAAHABUAGkAbQBlAGwAaQBuAGUARABvAGMAawBlAHIAAAAAAP////8AAANLAP///wAAA28AAAKHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHgBCAHIAdQBzAGgAZQBzAEEAbgBkAFMAdAB1AGYAZgEAAAAA/////wAAAAAAAAAA
+State=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awBlAHIAAAAAAP////8AAABVAP////sAAAAUAEcAcgBpAGQARABvAGMAawBlAHIAAAAAAP////8AAAErAP////sAAAAeAEgAaQBzAHQAbwBnAHIAYQBtAEQAbwBjAGsAZQByAAAAAAD/////AAAARQD////7AAAAKgBBAG4AaQBtAGEAdABpAG8AbgBDAHUAcgB2AGUAcwBEAG8AYwBrAGUAcgAAAAAA/////wAAAGgA////+wAAADIAUwB2AGcAUwB5AG0AYgBvAGwAQwBvAGwAbABlAGMAdABpAG8AbgBEAG8AYwBrAGUAcgAAAAAA/////wAAAHgA////+wAAABYAVABvAHUAYwBoAEQAbwBjAGsAZQByAAAAAkwAAAExAAAAEQD////7AAAAGgBBAHIAcgBhAG4AZwBlAEQAbwBjAGsAZQByAAAAAAD/////AAAANgD////7AAAAOgBjAG8AbQBpAGMAcwBfAHAAcgBvAGoAZQBjAHQAXwBtAGEAbgBhAGcAZQByAF8AZABvAGMAawBlAHIAAAAAAP////8AAAC3AP////sAAAAqAHEAdQBpAGMAawBfAHMAZQB0AHQAaQBuAGcAcwBfAGQAbwBjAGsAZQByAAAAAAD/////AAAAegD////7AAAAFgBQAGEAZwBlAHIARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAmAGwAYQBzAHQAZABvAGMAdQBtAGUAbgB0AHMAZABvAGMAawBlAHIAAAAAAP////8AAAB4AP////sAAAASAEcAYQBtAHUAdABNAGEAcwBrAAAAAAD/////AAABIwD////7AAAAEABTAG4AYQBwAHMAaABvAHQAAAAC3wAAAKQAAAB2AP////sAAAASAEwAbwBnAEQAbwBjAGsAZQByAAAAAAD/////AAAAeAD////7AAAAIABTAHQAbwByAHkAYgBvAGEAcgBkAEQAbwBjAGsAZQByAAAAAAD/////AAAAmgD///8AAAACAAAKAAAAALz8AQAAAAH7AAAAGgBUAG8AbwBsAEIAYQByAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAAAAAADAAAAAAAAAAD8AQAAAAT7AAAAHABGAGwAaQBwAGIAbwBvAGsARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAeAEEAbgBpAG0AYQB0AGkAbwBuAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAD7AAAAIABPAG4AaQBvAG4AUwBrAGkAbgBzAEQAbwBjAGsAZQByAAAAAAD/////AAABNgD////7AAAAHABUAGkAbQBlAGwAaQBuAGUARABvAGMAawBlAHIAAAAAAP////8AAANLAP///wAAA3kAAAKIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHgBCAHIAdQBzAGgAZQBzAEEAbgBkAFMAdAB1AGYAZgEAAAAA/////wAAAAAAAAAA
 XWAYLAND0 Height 1366x768 XWAYLAND0=703
 XWAYLAND0 Width 1366x768 XWAYLAND0=1366
 XWAYLAND0 Window-Maximized 1366x768 XWAYLAND0=true
-ko_geometry=AdnQywADAAAAAAAAAAAAAAAABVUAAAL/AAAAAAAAAB0AAAONAAAB/wAAAAACAAAABVYAAAAAAAAAHQAABVUAAAL/
+ko_geometry=AdnQywADAAAAAAAAAAAAAAAABVUAAAL/AAAAAAAAAB0AAAONAAAB/wAAAAACAAAABVYAAAAAAAAAHAAABVUAAAL/
 
 [MainWindow][DockWidget AnimationCurvesDocker]
 DockArea=2
@@ -404,8 +406,8 @@ yPosition=0
 [MainWindow][DockWidget ColorSelectorNg]
 DockArea=2
 Locked=true
-height=69
-width=217
+height=68
+width=207
 xPosition=0
 yPosition=17
 
@@ -460,7 +462,7 @@ yPosition=17
 [MainWindow][DockWidget KisLayerBox]
 DockArea=1
 Locked=false
-height=471
+height=463
 width=258
 xPosition=0
 yPosition=17
@@ -516,8 +518,8 @@ yPosition=0
 [MainWindow][DockWidget PresetDocker]
 DockArea=2
 Locked=false
-height=182
-width=217
+height=183
+width=207
 xPosition=0
 yPosition=17
 
@@ -596,7 +598,7 @@ yPosition=0
 [MainWindow][DockWidget ToolBox]
 DockArea=1
 Locked=false
-height=134
+height=143
 width=258
 xPosition=0
 yPosition=19
@@ -636,8 +638,8 @@ yPosition=17
 [MainWindow][DockWidget sharedtooldocker]
 DockArea=2
 Locked=true
-height=304
-width=217
+height=305
+width=207
 xPosition=0
 yPosition=17
 
@@ -646,125 +648,191 @@ pinControls=true
 
 [RecentFiles]
 File1[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Rika.kra
-File10[$e]=$HOME/Personal/Digital-Drawing/2023/main files/rika1.kra
-File11[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Yurika2.kra
-File12[$e]=$HOME/Personal/Digital-Drawing/2023/main files/lova.kra
-File13[$e]=$HOME/Personal/Digital-Drawing/2023/main files/AmaryllisComm.kra
-File14[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Yurika-overwhelm.kra
-File15[$e]=$HOME/Personal/Projects/LanAtelier/wiki/logos.kra
-File16[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Suzu.kra
-File17[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castella50.kra
-File18[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis~000.kra
-File19[$e]=$HOME/Personal/Digital-Drawing/2022/Main Files/Axellia.kra
+File10[$e]=$HOME/Personal/Digital-Drawing/2023/main files/lova.kra
+File11[$e]=$HOME/Personal/Digital-Drawing/2023/main files/AmaryllisComm.kra
+File12[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Yurika-overwhelm.kra
+File13[$e]=$HOME/Personal/Projects/LanAtelier/wiki/logos.kra
+File14[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Suzu.kra
+File15[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castella50.kra
+File16[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis~000.kra
+File17[$e]=$HOME/Personal/Digital-Drawing/2022/Main Files/Axellia.kra
+File18[$e]=$HOME/Personal/Digital-Drawing/2022/Main Files/Year End.kra
+File19[$e]=$HOME/Personal/Digital-Drawing/2022/Main Files/Mousse2.kra
 File2[$e]=$HOME/Personal/Digital-Drawing/2023/main files/fern.kra~
-File20[$e]=$HOME/Personal/Digital-Drawing/2022/Main Files/Year End.kra
-File21[$e]=$HOME/Personal/Digital-Drawing/2022/Main Files/Mousse2.kra
-File22[$e]=$HOME/Personal/Digital-Drawing/2023/main files/FrostyMay.kra
-File23[$e]=$HOME/Personal/Digital-Drawing/OC/Castella/main-file/Castella_early.kra
-File24[$e]=$HOME/Personal/Digital-Drawing/2023/main files/CastellaNuevo.kra
-File25[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Mayer.kra
-File26[$e]=$HOME/Personal/Digital-Drawing/2023/Mumu.png
-File27[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Mumu.kra
-File28[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis4.kra
-File29[$e]=$HOME/Personal/Digital-Drawing/2023/main files/PX_Bug.kra
+File20[$e]=$HOME/Personal/Digital-Drawing/2023/main files/FrostyMay.kra
+File21[$e]=$HOME/Personal/Digital-Drawing/OC/Castella/main-file/Castella_early.kra
+File22[$e]=$HOME/Personal/Digital-Drawing/2023/main files/CastellaNuevo.kra
+File23[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Mayer.kra
+File24[$e]=$HOME/Personal/Digital-Drawing/2023/Mumu.png
+File25[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Mumu.kra
+File26[$e]=$HOME/Personal/Digital-Drawing/2023/main files/PX_Bug.kra
+File27[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Fang.kra
+File28[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castella2.kra
+File29[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis3.kra
 File3[$e]=$HOME/Personal/Digital-Drawing/2023/main files/fern.kra
-File30[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Fang.kra
-File31[$e]=$HOME/Personal/Digital-Drawing/2023/main files/ Castella.kra
-File32[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castella2.kra
-File33[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis3.kra
-File34[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis5.kra
-File35[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis5-2.kra
-File36[$e]=$HOME/Personal/Digital-Drawing/2023/main files/truout.kra
-File37[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis6.kra
-File38[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis7.kra
-File39[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Rafaela.kra
+File30[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis5.kra
+File31[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis5-2.kra
+File32[$e]=$HOME/Personal/Digital-Drawing/2023/main files/truout.kra
+File33[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis6.kra
+File34[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis7.kra
+File35[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Rafaela.kra
+File36[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Rafaela2.kra
+File37[$e]=$HOME/Personal/Digital-Drawing/2023/main files/beanstalk.kra
+File38[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Vivian.kra
+File39[$e]=$HOME/Personal/Digital-Drawing/2023/main files/train.kra
 File4[$e]=$HOME/Personal/Digital-Drawing/2023/main files/ChelseaShaw.kra
-File40[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Rafaela2.kra
-File41[$e]=$HOME/Personal/Digital-Drawing/2023/main files/beanstalk.kra
-File42[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Vivian.kra
-File43[$e]=$HOME/Personal/Digital-Drawing/2023/main files/train.kra
-File44[$e]=$HOME/Personal/Digital-Drawing/2023/main files/train2.kra
-File45[$e]=$HOME/Personal/Digital-Drawing/2023/main files/train3.kra
-File46[$e]=$HOME/Personal/Digital-Drawing/2023/main files/hmmFlorence.kra
-File47[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Yurika-ssummrr.kra
-File48[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amemori.kra
-File49[$e]=$HOME/Personal/Digital-Drawing/2023/main files/wutdehell.kra
+File40[$e]=$HOME/Personal/Digital-Drawing/2023/main files/train2.kra
+File41[$e]=$HOME/Personal/Digital-Drawing/2023/main files/train3.kra
+File42[$e]=$HOME/Personal/Digital-Drawing/2023/main files/hmmFlorence.kra
+File43[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Yurika-ssummrr.kra
+File44[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amemori.kra
+File45[$e]=$HOME/Personal/Digital-Drawing/2023/main files/wutdehell.kra
+File46[$e]=$HOME/Personal/Digital-Drawing/2023/main files/fangg.kra
+File47[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis-slacking_off.kra
+File48[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis-ssummrr.kra
+File49[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castellirinha.kra
 File5[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Anna.kra
-File50[$e]=$HOME/Personal/Digital-Drawing/2023/main files/fangg.kra
-File51[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis-slacking_off.kra
-File52[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis-ssummrr.kra
-File53[$e]=$HOME/Personal/wurrkk/godforgiveme.kra
-File54[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castellirinha.kra
-File55[$e]=$HOME/Personal/Digital-Drawing/2023/main files/tryagain.kra
-File56[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis8.kra
-File57[$e]=$HOME/Personal/Digital-Drawing/2023/main files/letstryanother.kra
-File58[$e]=$HOME/Personal/Digital-Drawing/2023/main files/practice.kra
-File59[$e]=$HOME/Personal/Digital-Drawing/2023/main files/theGals.kra
+File50[$e]=$HOME/Personal/Digital-Drawing/2023/main files/tryagain.kra
+File51[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis8.kra
+File52[$e]=$HOME/Personal/Digital-Drawing/2023/main files/letstryanother.kra
+File53[$e]=$HOME/Personal/Digital-Drawing/2023/main files/practice.kra
+File54[$e]=$HOME/Personal/Digital-Drawing/2023/main files/FernBento.kra
+File55[$e]=$HOME/Personal/Digital-Drawing/2023/main files/theGals.kra
+File56[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Liz-Variations1.kra
+File57[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis9.kra
+File58[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castella3.kra
+File59[$e]=$HOME/Personal/Digital-Drawing/OC/Castella/EXP.kra
 File6[$e]=$HOME/Personal/Digital-Drawing/2023/main files/rand.kra
-File60[$e]=$HOME/Personal/Digital-Drawing/2023/main files/FernBento.kra
-File7[$e]=$HOME/Personal/Digital-Drawing/2023/main files/frostleaf.kra
-File8[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Zofia.kra
-File9[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Mousse.kra
+File60[$e]=$HOME/Personal/Digital-Drawing/OC/Castella/C1-1.kra
+File61[$e]=$HOME/Personal/Unorganized/Practise S1/Arch1.kra
+File62[$e]=$HOME/Personal/Digital-Drawing/2023/main files/persp1.kra
+File63[$e]=$HOME/Personal/Digital-Drawing/2023/main files/ Castella.kra
+File64[$e]=$HOME/Personal/Digital-Drawing/2023/main files/bask.kra
+File65[$e]=$HOME/Personal/Digital-Drawing/2023/main files/frostleaf.kra
+File66[$e]=$HOME/Personal/Digital-Drawing/2023/main files/CrimsonDuo.kra
+File67[$e]=$HOME/Personal/Digital-Drawing/2023/main files/propTesto.kra
+File68[$e]=$HOME/Personal/Digital-Drawing/2023/main files/ Castella7E7-2-3.kra
+File69[$e]=$HOME/Personal/Digital-Drawing/2023/main files/ Castella7E7-2Ril.kra
+File7[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Mousse.kra
+File70[$e]=$HOME/Personal/Digital-Drawing/2023/main files/ Castella7E7-2.kra
+File71[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis4.kra
+File72[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Nascita.kra
+File73[$e]=$HOME/Personal/Digital-Drawing/2023/main files/CardiganMousse--brainstorm.kra
+File74[$e]=$HOME/Personal/Digital-Drawing/2023/main files/CardiganMousse.kra
+File75[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Andreana.kra
+File76[$e]=$HOME/Personal/Digital-Drawing/2023/main files/andreana.kra
+File77[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis7E7-2.kra
+File78[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Antonina.kra
+File79[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Zofia.kra
+File8[$e]=$HOME/Personal/Digital-Drawing/2023/main files/rika1.kra
+File80[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis7E7-riil.kra
+File81[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Castella7E7-3.kra
+File82[$e]=$HOME/Personal/Digital-Drawing/2023/main files/sakuya.kra
+File83[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Millau.kra
+File84[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Roberta.kra
+File85[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Earhart.kra
+File86[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Amaryllis7E7-3.kra
+File87[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Taranum.kra
+File88[$e]=$HOME/Personal/Digital-Drawing/2023/main files/lavinia.kra
+File89[$e]=$HOME/Personal/Digital-Drawing/2024/mainFiles/ Amaryllis7E8.kra
+File9[$e]=$HOME/Personal/Digital-Drawing/2023/main files/Yurika2.kra
+File90[$e]=$HOME/Personal/Digital-Drawing/2024/mainFiles/Castella7E8.kra
+File91[$e]=$HOME/Personal/Digital-Drawing/2024/mainFiles/Rafaela3.kra
+File92[$e]=$HOME/Personal/Digital-Drawing/2024/mainFiles/Yelena.kra
+File93[$e]=$HOME/Personal/Digital-Drawing/2024/mainFiles/buns.kra
 Name1=Rika.kra
-Name10=rika1.kra
-Name11=Yurika2.kra
-Name12=lova.kra
-Name13=AmaryllisComm.kra
-Name14=Yurika-overwhelm.kra
-Name15=logos.kra
-Name16=Suzu.kra
-Name17=Castella50.kra
-Name18=Amaryllis~000.kra
-Name19=Axellia.kra
+Name10=lova.kra
+Name11=AmaryllisComm.kra
+Name12=Yurika-overwhelm.kra
+Name13=logos.kra
+Name14=Suzu.kra
+Name15=Castella50.kra
+Name16=Amaryllis~000.kra
+Name17=Axellia.kra
+Name18=Year End.kra
+Name19=Mousse2.kra
 Name2=fern.kra~
-Name20=Year End.kra
-Name21=Mousse2.kra
-Name22=FrostyMay.kra
-Name23=Castella_early.kra
-Name24=CastellaNuevo.kra
-Name25=Mayer.kra
-Name26=Mumu.png
-Name27=Mumu.kra
-Name28=Amaryllis4.kra
-Name29=PX_Bug.kra
+Name20=FrostyMay.kra
+Name21=Castella_early.kra
+Name22=CastellaNuevo.kra
+Name23=Mayer.kra
+Name24=Mumu.png
+Name25=Mumu.kra
+Name26=PX_Bug.kra
+Name27=Fang.kra
+Name28=Castella2.kra
+Name29=Amaryllis3.kra
 Name3=fern.kra
-Name30=Fang.kra
-Name31=\sCastella.kra
-Name32=Castella2.kra
-Name33=Amaryllis3.kra
-Name34=Amaryllis5.kra
-Name35=Amaryllis5-2.kra
-Name36=truout.kra
-Name37=Amaryllis6.kra
-Name38=Amaryllis7.kra
-Name39=Rafaela.kra
+Name30=Amaryllis5.kra
+Name31=Amaryllis5-2.kra
+Name32=truout.kra
+Name33=Amaryllis6.kra
+Name34=Amaryllis7.kra
+Name35=Rafaela.kra
+Name36=Rafaela2.kra
+Name37=beanstalk.kra
+Name38=Vivian.kra
+Name39=train.kra
 Name4=ChelseaShaw.kra
-Name40=Rafaela2.kra
-Name41=beanstalk.kra
-Name42=Vivian.kra
-Name43=train.kra
-Name44=train2.kra
-Name45=train3.kra
-Name46=hmmFlorence.kra
-Name47=Yurika-ssummrr.kra
-Name48=Amemori.kra
-Name49=wutdehell.kra
+Name40=train2.kra
+Name41=train3.kra
+Name42=hmmFlorence.kra
+Name43=Yurika-ssummrr.kra
+Name44=Amemori.kra
+Name45=wutdehell.kra
+Name46=fangg.kra
+Name47=Amaryllis-slacking_off.kra
+Name48=Amaryllis-ssummrr.kra
+Name49=Castellirinha.kra
 Name5=Anna.kra
-Name50=fangg.kra
-Name51=Amaryllis-slacking_off.kra
-Name52=Amaryllis-ssummrr.kra
-Name53=godforgiveme.kra
-Name54=Castellirinha.kra
-Name55=tryagain.kra
-Name56=Amaryllis8.kra
-Name57=letstryanother.kra
-Name58=practice.kra
-Name59=theGals.kra
+Name50=tryagain.kra
+Name51=Amaryllis8.kra
+Name52=letstryanother.kra
+Name53=practice.kra
+Name54=FernBento.kra
+Name55=theGals.kra
+Name56=Liz-Variations1.kra
+Name57=Amaryllis9.kra
+Name58=Castella3.kra
+Name59=EXP.kra
 Name6=rand.kra
-Name60=FernBento.kra
-Name7=frostleaf.kra
-Name8=Zofia.kra
-Name9=Mousse.kra
+Name60=C1-1.kra
+Name61=Arch1.kra
+Name62=persp1.kra
+Name63=\sCastella.kra
+Name64=bask.kra
+Name65=frostleaf.kra
+Name66=CrimsonDuo.kra
+Name67=propTesto.kra
+Name68=\sCastella7E7-2-3.kra
+Name69=\sCastella7E7-2Ril.kra
+Name7=Mousse.kra
+Name70=\sCastella7E7-2.kra
+Name71=Amaryllis4.kra
+Name72=Nascita.kra
+Name73=CardiganMousse--brainstorm.kra
+Name74=CardiganMousse.kra
+Name75=Andreana.kra
+Name76=andreana.kra
+Name77=Amaryllis7E7-2.kra
+Name78=Antonina.kra
+Name79=Zofia.kra
+Name8=rika1.kra
+Name80=Amaryllis7E7-riil.kra
+Name81=Castella7E7-3.kra
+Name82=sakuya.kra
+Name83=Millau.kra
+Name84=Roberta.kra
+Name85=Earhart.kra
+Name86=Amaryllis7E7-3.kra
+Name87=Taranum.kra
+Name88=lavinia.kra
+Name89=\sAmaryllis7E8.kra
+Name9=Yurika2.kra
+Name90=Castella7E8.kra
+Name91=Rafaela3.kra
+Name92=Yelena.kra
+Name93=buns.kra
 maxRecentFileItems=100
 
 [SelectedTags]
@@ -798,6 +866,9 @@ shadeSelectorType=Hidden
 showColorSelector=false
 useCustomColorForBackground=false
 
+[blur_filter_bookmarks]
+Last Used=<!DOCTYPE params>\n<params version="1">\n <param name="halfHeight" type="internal">99</param>\n <param name="halfWidth" type="internal">35</param>\n <param name="lockAspect" type="internal">false</param>\n <param name="rotate" type="internal">0</param>\n <param name="shape" type="internal">1</param>\n <param name="strength" type="internal">29</param>\n</params>\n
+
 [colorbalance_filter_bookmarks]
 Last Used=<!DOCTYPE params>\n<params version="0">\n <param type="internal" name="cyan_red_highlights">0</param>\n <param type="internal" name="cyan_red_midtones">0</param>\n <param type="internal" name="cyan_red_shadows">0</param>\n <param type="internal" name="magenta_green_highlights">0</param>\n <param type="internal" name="magenta_green_midtones">0</param>\n <param type="internal" name="magenta_green_shadows">0</param>\n <param type="internal" name="preserve_luminosity">true</param>\n <param type="internal" name="yellow_blue_highlights">-74</param>\n <param type="internal" name="yellow_blue_midtones">0</param>\n <param type="internal" name="yellow_blue_shadows">0</param>\n</params>\n
 
@@ -808,8 +879,11 @@ CreatingCanvas=false
 forceLodMode=true
 showPreview=true
 
+[gaussian blur_filter_bookmarks]
+Last Used=<!DOCTYPE params>\n<params version="1">\n <param name="horizRadius" type="internal">491.76</param>\n <param name="lockAspect" type="internal">true</param>\n <param name="vertRadius" type="internal">491.76</param>\n</params>\n
+
 [hsvadjustment_filter_bookmarks]
-Last Used=<!DOCTYPE params>\n<params version="0">\n <param type="internal" name="colorize">false</param>\n <param type="internal" name="compatibilityMode">false</param>\n <param type="internal" name="h">0</param>\n <param type="internal" name="s">-23</param>\n <param type="internal" name="type">1</param>\n <param type="internal" name="v">0</param>\n</params>\n
+Last Used=<!DOCTYPE params>\n<params version="0">\n <param name="colorize" type="internal">false</param>\n <param name="compatibilityMode" type="internal">false</param>\n <param name="h" type="internal">0</param>\n <param name="s" type="internal">-17</param>\n <param name="type" type="internal">1</param>\n <param name="v" type="internal">0</param>\n</params>\n
 
 [krita]
 ColorSpaceExtensionsPlugins=\\0
@@ -832,7 +906,7 @@ Last Used=<!DOCTYPE params>\n<params version="2">\n <param name="mode">lightness
 Last Used=<!DOCTYPE params>\n<params version="1">\n <param type="internal" name="blurAngle">0</param>\n <param type="internal" name="blurLength">14</param>\n</params>\n
 
 [perchannel_filter_bookmarks]
-Last Used=<!DOCTYPE params>\n<params version="1">\n <param name="nTransfers">8</param>\n <param name="curve0">0,0;0.714617,0.797753;1,1;</param>\n <param name="curve1">0,0;1,1;</param>\n <param name="curve2">0,0;1,1;</param>\n <param name="curve3">0,0;1,1;</param>\n <param name="curve4">0,0;1,1;</param>\n <param name="curve5">0,0;1,1;</param>\n <param name="curve6">0,0;1,1;</param>\n <param name="curve7">0,0;1,1;</param>\n</params>\n
+Last Used=<!DOCTYPE params>\n<params version="1">\n <param name="nTransfers">8</param>\n <param name="curve0">0,0;0.540603,0.490637;1,1;</param>\n <param name="curve1">0,0;1,1;</param>\n <param name="curve2">0,0;1,1;</param>\n <param name="curve3">0,0;1,1;</param>\n <param name="curve4">0,0;1,1;</param>\n <param name="curve5">0,0;1,1;</param>\n <param name="curve6">0,0;1,1;</param>\n <param name="curve7">0,0;1,1;</param>\n</params>\n
 
 [theme]
 Theme=Krita dark orange
