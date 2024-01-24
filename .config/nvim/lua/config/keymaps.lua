@@ -10,6 +10,9 @@ local opts = function(isSilent, desc)
 	}
 end
 
+-- Basic
+map("n", "zz", ":bd<CR>", opts(true, "Close and delete currently opened buffer"))
+
 -- Tab Management
 map("n", "<C-l>", ":tabn<CR>", opts(true, "Go to next tab"))
 map("n", "<leader>tn", ":tabnew<CR>", opts(true, "Make new tab"))
@@ -20,4 +23,3 @@ map('n', '<M-h>', '<C-w>h', opts(true, "Go to upper split"))
 map('n', '<M-j>', '<C-w>j', opts(true, "Go to lower split"))
 map('n', '<M-k>', '<C-w>k', opts(true, "Go to right-er split"))
 map('n', '<M-l>', '<C-w>l', opts(true, "Go to left-er split"))
-
